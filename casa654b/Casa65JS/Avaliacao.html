@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA65</title>
+    <link rel="stylesheet" href="Casa65Css.css">
+    <style>
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            var nome = document.getElementById("nome").value;
+            var telefone = document.getElementById("telefone").value;
+            var cpf = document.getElementById("cpf").value;
+            var texto = document.getElementById("texto").value;
+
+            // Verifica se o campo nome está vazio
+          if (nome === "") {
+              alert("Por favor, preencha o campo de nome.");
+              return false; // Impede o envio do form
+          }
+
+          // Verifica se o campo telefone está vazio
+          if (telefone === "") {
+              alert("Por favor, informe o número para contato.");
+              return false; // Impede o envio do form
+          }
+
+          // Verifica se o campo cpf está vazio
+          if (cpf === "") {
+              alert("Por favor, informe o CPF.");
+              return false; // Impede o envio do form
+          }
+
+         
+
+            // Verifica se algum radio button foi selecionado
+        if (!document.getElementById('um').checked && !document.getElementById('dois').checked && !document.getElementById('tres').checked && 
+        !document.getElementById('quatro').checked && !document.getElementById('cinco').checked )  {
+            alert("Por favor, selecione a nota de sua avaliação!!.");
+            return false; // Impede o envio do form
+        }
+
+          // Caso todos os campos estejam preenchidos corretamente, retorna true
+          return true;
+        }
+
+        /*Formulário de avaliação concluído!!!!!!*/
+
+
+    </script>
+</head>
+<body background="BBTT.png">
+
+    <div id="divCabecalho11" >
+        <table>
+            <tr>
+                <td id="Nulo"> </td>
+                <td><a class="link" href="PagPrinc65.html">Início</a> </td>
+                <td><a class="link" href="Sobrenós65.html">Sobre nós</a> </td>
+                <td><a class="link" href="Sobreacasa65.html">Sobre a casa</a></td>
+                <td><a class="link" href="Localização65.html">Localização</a></td>
+                <td><a class="link" href="Contatos65.html">Contatos</a></td>
+                <td><a class="link" href="Avaliacao.html">Avaliação</a></td>
+                <td id="Nulo2"> </td>
+            </tr>
+        </table>
+        </div>
+
+
+    </br></br></br>
+
+    <div class="container">
+  <div class="Form">
+    <fieldset class="fd">
+        
+   <form  id="form2" action=" confirmacao2.html" onsubmit="return validateForm()" >
+ 
+
+   Nome Completo: <input type="text" size="20px" id="nome"> </br>
+   Telefone para contato: <input type="number" size="20px" id="telefone"> </br>
+   CPF: <input type="number" size="20px" id="cpf">
+   </br> </br>
+
+
+   <b> Caso deseje, deixe abaixo um comentário sobre sua estadia: </b> </br>
+   <textarea name="txtarea" rows="4"  id="texto"></textarea>
+   </br> </br>
+
+   <h4> Nota de 1 a 5 </h4>
+   <input type="radio" name="opRadio" id="um"> 1 
+   <input type="radio" name="opRadio" id="dois"> 2
+   <input type="radio" name="opRadio" id="tres"> 3
+   <input type="radio" name="opRadio" id="quatro"> 4
+   <input type="radio" name="opRadio" id="cinco"> 5
+   </br> </br>
+
+   <input type="submit">
+   <input type="reset">
+
+   </form>
+   </fieldset>
+ </div>
+</div>
+
+</body>
+</html>

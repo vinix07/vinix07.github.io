@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa65</title>
+    <link rel="stylesheet" href="Casa65Css.css">
+
+
+    <script>
+      function validateForm() {
+          var nome = document.getElementById("nome").value;
+          var telefone = document.getElementById("telefone").value;
+          var cpf = document.getElementById("cpf").value;
+          var data = document.getElementById("data").value;
+  
+          // Verifica se o campo nome está vazio
+          if (nome === "") {
+              alert("Por favor, preencha o campo de nome.");
+              return false; // Impede o envio do form
+          }
+  
+          // Verifica se o campo telefone está vazio
+          if (telefone === "") {
+              alert("Por favor, informe o número para contato.");
+              return false; // Impede o envio do form
+          }
+  
+          // Verifica se o campo cpf está vazio
+          if (cpf === "") {
+              alert("Por favor, informe o CPF.");
+              return false; // Impede o envio do form
+          }
+
+          // Verifica se o campo data está vazio
+          if (data === "") {
+              alert("Por favor, informe a data da reserva.");
+              return false; // Impede o envio do form
+          }
+  
+            // Verifica se algum radio button foi selecionado referente a quantidade de quartos
+        if (!document.getElementById('um').checked && !document.getElementById('dois').checked &&
+         !document.getElementById('tres').checked) {
+            alert("Por favor, selecione a quantidade de quartos.");
+            return false; // Impede o envio do form
+        }
+           //verifica se o numero de adultos foi selecionado
+        if (!document.getElementById('1b1').checked && !document.getElementById('2b1').checked &&
+         !document.getElementById('3b1').checked && !document.getElementById('4b1').checked) {
+            alert("Por favor, selecione a quantidade de adultos.");
+            return false; // Impede o envio do form
+        }
+          //verifica se o numero de crianças foi selecionado
+        if (!document.getElementById('1b2').checked && !document.getElementById('2b2').checked &&
+         !document.getElementById('3b2').checked && !document.getElementById('4b2').checked) {
+            alert("Por favor, selecione a quantidade de crianças.");
+            return false; // Impede o envio do form
+        }
+        
+        //verifica se a forma de pagamento foi selecionada
+        if (!document.getElementById('Pix').checked && !document.getElementById('Dinheiro').checked &&
+         !document.getElementById('Cartao').checked ) {
+            alert("Por favor, selecione a forma de pagamento.");
+            return false; // Impede o envio do form
+        }
+
+
+          // Caso todos os campos estejam preenchidos corretamente, retorna true
+          return true;
+      }
+  </script>
+    
+</head>
+<body id="FundoContato" background="FCont.jpeg">
+
+    <!--Estrutura do menu-->
+    
+    <div id="divCabecalho11" >
+        <table>
+            <tr>
+                <td id="Nulo"> </td>
+                <td><a class="link" href="PagPrinc65.html">Início</a> </td>
+                <td><a class="link" href="Sobrenós65.html">Sobre nós</a> </td>
+                <td><a class="link" href="Sobreacasa65.html">Sobre a casa</a></td>
+                <td><a class="link" href="Localização65.html">Localização</a></td>
+                <td><a class="link" href="Contatos65.html">Contatos</a></td>
+                <td><a class="link" href="Avaliacao.html">Avaliação</a></td>
+                <td id="Nulo2"> </td>
+            </tr>
+        </table>
+        </div>
+    
+    <!--Texto central da página-->
+    <div id="Contatoss">
+    <p id="titp5">Entre em contato conosco:</p>
+    <p class="textp5"> Whatsapp : (84) 99999-9999</p>
+    <p class="textp5"> Instagram : <a href="https://www.instagram.com/espaco65_?igsh=MXFjbWZrZHcxbHdycQ=="> Espaco65</a></p>
+    <br/>
+    <br/>
+    <br/>
+    </div>
+
+    
+    <div class="Form">
+        <fieldset class="fs">
+            <legend id="leg" > Faça sua reserva na casa65</legend>
+     <form action=" confirmacao.html" id="Formulario1" onsubmit="return validateForm()">
+     
+        <br/>
+        <br/>
+       Nome Completo: <input type="text" size="20px" id="nome"> </br>
+       Telefone para contato: <input type="number" size="20px" id="telefone"> </br>
+       CPF: <input type="number" size="20px" id="cpf">
+    </br> </br>
+
+      Data da reserva : <input type="text" size="20px" id="data"> </br></br>
+    
+    <h4> Quantidade de quartos  </h4> 
+   <input type="radio" name="opRadio" id="um"> 1
+   <input type="radio" name="opRadio" id="dois"> 2
+   <input type="radio" name="opRadio" id="tres"> 3
+</br> </br>
+
+<!--Falta fazer daqui pra frente! 10/12/24 21:41 - mary dormiu -->
+    <b> Selecione a quantidade de adultos</b>
+</br></br>
+    <input type="checkbox" name="botao" id="1b1"> 1
+    <input type="checkbox" name="botao" id="2b1"> 2
+    <input type="checkbox" name="botao" id="3b1"> 3
+    <input type="checkbox" name="botao" id="4b1"> 4
+
+    </br> </br>
+
+    <!--oq é esse option mds-->
+    <b> Selecione a quantidade de crianças : </b>
+</br> </br>
+    <input type="checkbox" name="botao" id="1b2"> 1
+    <input type="checkbox" name="botao" id="2b2"> 2
+    <input type="checkbox" name="botao" id="3b2"> 3
+    <input type="checkbox" name="botao" id="4b2"> 4
+    </br> </br>
+
+    
+    <b> Qual será a forma de pagamento? </b> </br>
+    
+    <input type="radio" name="Pix"  id="Pix"/> Pix
+    <input type="radio" name="Dinheiro"  id="Dinheiro"/>Dinheiro
+    <input type="radio" name="Cartão"  id="Cartao"/> Cartão
+    </br> </br>
+    
+    <input type="file" name=" Comprovante "/></br> Anexe aqui seu comprovante de pagamento!
+    </br> </br>
+    
+    <b> Caso tenha dúvidas, utilize o campo abaixo </b> </br>
+    <textarea name="txtarea" rows="4"></textarea>
+    </br> </br>
+    
+    
+    <input type="submit">
+    <input type="reset">
+    
+     </form>
+       </fieldset>
+    </div>
+
+
+</body>
+</html>

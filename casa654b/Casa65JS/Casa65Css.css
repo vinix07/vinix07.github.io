@@ -1,0 +1,250 @@
+/*Página 1*/
+
+/*Inicio do css do menu (válido para os menus de todas as páginas)*/
+#divCabecalho11{
+    background-color: black;
+    height: 30px;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+#Nulo{
+    width: 268px;     
+}
+#Nulo2{
+    width: 268px;   
+}
+#Menu{
+    text-align: center;
+}
+.link{
+    margin: 15px;
+    color: white;
+    font-size: 20px;
+}
+/*Fim do css do menu*/
+
+/*CSS dos elementos da página 1(Princ65)*/
+#FundoPrinc{
+    background-size: cover;
+    background-attachment : fixed ;
+}
+.Conteudo11{
+    width: 99%;
+    height: 500px;
+    text-align: center; 
+}
+#titcasa{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    margin-top: 220px;
+    margin-bottom: 0px;
+}
+#Sec{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+ /* PAGINA2 */
+
+ /*CSS da pág 2(Sobre nós)*/
+ #FundoFam{
+    background-size: cover;
+    background-attachment : fixed; 
+ }
+#titp2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+ }
+.textop2{
+    text-align: center;
+    font-size: 22px;
+    color: white
+ }
+ /*Div e foto da coruja*/
+#Coruja{
+  text-align: center;
+ }
+#imagemCoruja{
+    width: 250px;
+    height: 280px;
+ }
+/*Div e foto da familia*/
+ #SFF{
+    text-align: center;
+ }
+ #SF{
+    width: 320px;
+    height: 280px;
+ }
+
+ /* PAGINA 3 */
+
+#FundoCasa{
+    background-size: cover;
+    background-attachment : fixed ;
+}
+#titp3{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.textp3{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+ /*Div e foto da pousada antiga*/
+#Mara{
+    text-align: center;
+}
+#imagemMara{
+
+    width: 250px;
+    height: 280px;
+}
+ /*Div e foto dos animais*/
+#BB{
+    text-align: center;
+}
+#Pets{
+    width: 250px;
+    height: 350px;
+}
+ /*Tabela e fotos da casa*/
+.Fotod{
+    width:100%;
+    height:100%;
+}
+table {
+        margin: 0 auto; 
+}
+img {
+width: 250px;
+height: 350px;
+}
+
+#vid{
+text-align: center;
+}
+
+#videoo{
+    width: 250px;
+height: 450px;
+
+}
+/* PAGINA 4*/
+
+#FundoLocal{
+    background-size: cover;
+    background-attachment : fixed ;
+}
+.Titp4{
+    font-size:35px;
+    text-align: center;
+    color: white;
+}
+.textp4{
+    font-size:22px;
+    text-align: center;
+    color: white;
+}
+/*div que guarda as imagens da página localização*/
+.Loca{
+    text-align: center;
+}
+/*imagens*/
+img{
+    width: 300px;
+    height: 300px;   
+}
+/*Foto beach tênis*/
+#CM{
+    width: 250px;
+    height: 300px;
+}
+/*Foto beach soccer*/
+#FGF{
+    width: 250px;
+    height: 300px;
+}
+/*Foto praia de Xêpa*/
+#Xeps{
+    width: 375px;
+}
+/*Foto da praia*/
+#drone{
+    width: 375px;
+}
+
+/*PAGINA 5*/
+
+#FundoContato{
+    background-size: cover;
+    background-attachment : fixed ;
+}
+#titp5{
+    font-size:35px;
+    text-align: center;
+    color: white;
+}
+.textp5{
+    font-size:22px;
+    text-align: center;
+    color: white;
+}
+/*Texto central da página*/
+#Contatoss{
+    margin-top: 10%;
+}
+
+/*FORM 1*/
+
+.fs{
+    
+    width: 67%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.Form{
+    width: 98%;
+    align-items: center;
+}
+#Formulario1{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+#leg{
+    font-size: 25px;
+    color: white;
+    text-align: center; 
+}
+
+#conf{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form2{
+    text-align: center;
+    font-size: 25px;
+    color: white; 
+}
+
+/*Pag de confirmacao de formulários*/
+.TextoConfirm{
+color: white;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+}
+
+
