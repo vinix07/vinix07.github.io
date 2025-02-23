@@ -51,18 +51,7 @@
             alert("Por favor, selecione a quantidade de quartos.");
             return false; // Impede o envio do form
         }
-           //verifica se o numero de adultos foi selecionado
-        if (!document.getElementById('1b1').checked && !document.getElementById('2b1').checked &&
-         !document.getElementById('3b1').checked && !document.getElementById('4b1').checked) {
-            alert("Por favor, selecione a quantidade de adultos.");
-            return false; // Impede o envio do form
-        }
-          //verifica se o numero de crianças foi selecionado
-        if (!document.getElementById('1b2').checked && !document.getElementById('2b2').checked &&
-         !document.getElementById('3b2').checked && !document.getElementById('4b2').checked) {
-            alert("Por favor, selecione a quantidade de crianças.");
-            return false; // Impede o envio do form
-        }
+        
         
         //verifica se a forma de pagamento foi selecionada
         if (!document.getElementById('Pix').checked && !document.getElementById('Dinheiro').checked &&
@@ -135,58 +124,99 @@
      
         <br/>
         <br/>
-       Nome Completo: <input type="text" size="20px" id="nome"> </br>
-       Telefone para contato: <input type="number" size="20px" id="telefone"> </br>
-       CPF: <input type="number" size="20px" id="cpf">
-    </br> </br>
 
-      Data da reserva : <input type="text" size="20px" id="data"> </br></br>
-    
-    <h4> Quantidade de quartos  </h4> 
-   <input type="radio" name="opRadio" id="um"> 1
-   <input type="radio" name="opRadio" id="dois"> 2
-   <input type="radio" name="opRadio" id="tres"> 3
-</br> </br>
+        
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar suas informações, com ninguém.</small>
+            </div>
+        </br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Nome completo</label>
+              <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+            </div>
+        </br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Telefone para contato</label>
+                <input type="number" class="form-control" id="telefone" placeholder="Telefone">
+              </div>
+         </br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="CPF">
+              </div>
 
-<!--Falta fazer daqui pra frente! 10/12/24 21:41 - mary dormiu -->
-    <b> Selecione a quantidade de adultos</b>
-</br></br>
-    <input type="checkbox" name="botao" id="1b1"> 1
-    <input type="checkbox" name="botao" id="2b1"> 2
-    <input type="checkbox" name="botao" id="3b1"> 3
-    <input type="checkbox" name="botao" id="4b1"> 4
+            </br></br>
 
-    </br> </br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Data da reserva</label>
+                <input type="text" class="form-control" id="data" placeholder="Data da reserva">
+              </div>
+            </br> </br>
 
-    <!--oq é esse option mds-->
-    <b> Selecione a quantidade de crianças : </b>
-</br> </br>
-    <input type="checkbox" name="botao" id="1b2"> 1
-    <input type="checkbox" name="botao" id="2b2"> 2
-    <input type="checkbox" name="botao" id="3b2"> 3
-    <input type="checkbox" name="botao" id="4b2"> 4
-    </br> </br>
 
-    
-    <b> Qual será a forma de pagamento? </b> </br>
-    
-    <input type="radio" name="Pix"  id="Pix"/> Pix
-    <input type="radio" name="Dinheiro"  id="Dinheiro"/>Dinheiro
-    <input type="radio" name="Cartão"  id="Cartao"/> Cartão
-    </br> </br>
-    
-    <input type="file" name=" Comprovante "/></br> Anexe aqui seu comprovante de pagamento!
-    </br> </br>
-    
-    <b> Caso tenha dúvidas, utilize o campo abaixo </b> </br>
-    <textarea name="txtarea" rows="4"></textarea>
-    </br> </br>
-    
-    
-    <input type="submit">
-    <input type="reset">
-    
-     </form>
+            <h4> Quantidade de quartos  </h4> 
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="um" value="opcao1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="dois" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">
+                  2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="tres" value="option3" disabled>
+                <label class="form-check-label" for="exampleRadios3">
+                  3
+                </label>
+              </div>
+            </br></br>
+
+              <h2>Forma de pagamento </h2> 
+            </br>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Pix">
+                <label class="form-check-label" for="defaultCheck1">
+                  pix
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Credito" >
+                <label class="form-check-label" for="defaultCheck2">
+                 crédito
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Debito" >
+                <label class="form-check-label" for="defaultCheck2">
+                 débito
+                </label>
+              </div>
+            </br></br>
+
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1"> Comprovante de pagamento </label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+              </form>
+            </br></br>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Caso tenha alguma dúvida</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
+
+   
        </fieldset>
     </div>
 

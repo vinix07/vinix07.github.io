@@ -111,15 +111,29 @@
    <form  id="form2" action=" confirmacao2.html" onsubmit="return validateForm()" >
  
 
-   Nome Completo: <input type="text" size="20px" id="nome"> </br>
-   Telefone para contato: <input type="number" size="20px" id="telefone"> </br>
-   CPF: <input type="number" size="20px" id="cpf">
-   </br> </br>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Endereço de email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar suas informações, com ninguém.</small>
+      </div>
+  </br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Nome completo</label>
+        <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+      </div>
+  </br>
+      <div class="form-group">
+          <label for="exampleInputPassword1">Telefone para contato</label>
+          <input type="number" class="form-control" id="telefone" placeholder="Telefone">
+        </div>
 
 
-   <b> Caso deseje, deixe abaixo um comentário sobre sua estadia: </b> </br>
-   <textarea name="txtarea" rows="4"  id="texto"></textarea>
-   </br> </br>
+    </br></br>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Caso tenha alguma dúvida</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </br>
 
    <h4> Nota de 1 a 5 </h4>
    <input type="radio" name="opRadio" id="um"> 1 
@@ -129,8 +143,8 @@
    <input type="radio" name="opRadio" id="cinco"> 5
    </br> </br>
 
-   <input type="submit">
-   <input type="reset">
+   <button type="submit" class="btn btn-primary">Enviar</button>
+   
 
    </form>
    </fieldset>
