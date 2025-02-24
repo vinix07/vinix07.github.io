@@ -20,7 +20,7 @@
             background-repeat: no-repeat;
         }
     </style>
-
+<!--
     <script>
         function validateForm() {
             var nome = document.getElementById("nome").value;
@@ -62,7 +62,7 @@
         /*Formulário de avaliação concluído!!!!!!*/
 
 
-    </script>
+    </script>-->
 </head>
 <body background="imagens/BBTT.png">
 
@@ -108,23 +108,23 @@
   <div class="Form">
     <fieldset class="fd">
         
-   <form  id="form2" action=" confirmacao2.html" onsubmit="return validateForm()" >
+   <form  id="form2" action="confirmacao2.html" onsubmit="return validateForm()" >
  
 
     <div class="form-group">
         <label for="exampleInputEmail1">Endereço de email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" required/>
         <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar suas informações, com ninguém.</small>
       </div>
   </br>
       <div class="form-group">
         <label for="exampleInputPassword1">Nome completo</label>
-        <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+        <input type="text" class="form-control" id="nome" placeholder="Nome completo" required/>
       </div>
   </br>
       <div class="form-group">
           <label for="exampleInputPassword1">Telefone para contato</label>
-          <input type="number" class="form-control" id="telefone" placeholder="Telefone">
+          <input type="number" class="form-control" id="telefone" placeholder="Telefone" required/>
         </div>
 
 
